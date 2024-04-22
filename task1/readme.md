@@ -13,4 +13,24 @@
     "files": ["app.ts", "./"]
 }
 ```
-2. 
+2. include
+- ```files```과 같이 파일을 개별로 지정하지 않고 ```include``` 옵션으로 변환할 폴더를 지정할 수 있음.
+```
+{
+  "include": ["src/**/*"]
+}
+```
+3. exclude
+- 반대되는 속성으로 변환하지 않을 폴더 경로를 지정
+```
+{
+  "exclude": ["node_modules","**/*.test.ts"]
+}
+```
+4. extends
+- 다른 tsconfig.json 파일을 상속받아서 설정을 재사용할 수 있게 해주는 속성
+- 만약 설정하지 않으면 기본적으로 ```node_modules```, ```bower_components``` 같은 폴더를 제외
+- 컴파일 대상 경로를 정의하는 속성의 우선 순위 files > include = exclude
+
+5. references
+- 여러개의 하위 프로젝트로 구성된 프로젝트의 의존 관계를 지정하는 속성
