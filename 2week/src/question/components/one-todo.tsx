@@ -1,36 +1,35 @@
 import { TodoDataBase, TodoEnum } from "@type/todo";
+import DailyTodo from "./dailyTodo";
+import WeeklyTodo from "./weeklyTodo";
+import MonthlyTodo from "./monthlyTodo";
 
 interface Props {
     todo: TodoDataBase;
 }
 
-const isDaily = (
-    todo: TodoDataBase
-): todo is TodoDataBase & {
-    title: string;
-    content: string;
-} => {
-    return todo.type === TodoEnum.DAILY;
-};
-
-const isWeekly = (
-    todo: TodoDataBase
-): todo is TodoDataBase & {
-    total: number;
-} => {
-    return todo.type === TodoEnum.WEEKLY;
-};
-
-const isMonthly = (
-    todo: TodoDataBase
-): todo is TodoDataBase & {
-    goal: string;
-} => {
-    return todo.type === TodoEnum.MONTHLY;
-};
-
 const OneTodo: React.FC<Props> = ({ todo }) => {
-    if (isDaily(todo)) {
+    switch (todo.type) {
+        case TodoEnum.DAILY:
+            return (
+                <DailyTodo
+                    todo={
+                        todo as TodoDataBase & {
+                            title: string;
+                            content: string;
+                        }
+                    }
+                />
+            );
+        case TodoEnum.WEEKLY:
+            return (
+                <WeeklyTodo todo={todo as TodoDataBase & { total: number }} />
+            );
+        case TodoEnum.MONTHLY:
+            return (
+                <MonthlyTodo todo={todo as TodoDataBase & { goal: string }} />
+            );
+        default:
+            return <div>Unknown Todo Type</div>;
     }
 
     return <div>:)</div>;
