@@ -9,9 +9,10 @@
 ```
 
 ### task1
-[Readme바로가기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Wendy/task1/readme.md)
+[Task1.Readme바로가기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Wendy/task1/readme.md)
 
 ### task2
+[Task2.Readme바로가기](https://github.com/mobi-community/mobi-3rd-typescript-2/tree/pair2-Wendy/task2)
 
 ### task3
 ### task4
