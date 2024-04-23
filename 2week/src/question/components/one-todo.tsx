@@ -31,7 +31,5 @@ const OneTodo: React.FC<Props> = ({ todo }) => {
         default:
             return <div>Unknown Todo Type</div>;
     }
-
-    return <div>:)</div>;
 };
 export default OneTodo;
