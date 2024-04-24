@@ -4,11 +4,16 @@
 
 ### task 1
 #### [🔗README 바로가기]()
+#### 요약
+- tsconfig.json
+  - `tsconfig.json` 이란?
+  - 옵션 정리하기
+  - 내 결론
 
 ### task 2
 #### [🔗README 바로가기]()
 #### 요약
-- type-guard, 관련 개념 & 연산자의 사용방법을 정리했습니다.
+- type-guard
   - in
   - typeof
   - instanceof
@@ -20,7 +25,7 @@
 ### task 4
 #### [🔗README 바로가기]()
 #### 요약
-- enum & import "type" 관련 내용 정리했습니다.
+- enum & import "type"
   - enum
     - 숫자열거형
     - 문자열거형
