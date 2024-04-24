@@ -15,7 +15,4 @@ export type TodoDataBase =
       goal: string
     }
 
-export type TodoType<T extends TodoEnum = TodoEnum> = Extract<
-  TodoDataBase,
-  { type: T }
->
+export type TodoType<T extends TodoEnum> = Extract<TodoDataBase, { type: T }>
