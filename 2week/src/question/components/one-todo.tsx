@@ -21,9 +21,7 @@ const OneTodo: React.FC<Props> = ({ todo }) => {
                 />
             );
         case TodoEnum.WEEKLY:
-            return (
-                <WeeklyTodo todo={todo as TodoDataBase & { total: number }} />
-            );
+            return <WeeklyTodo todo={todo as TodoDataBase & { total: Date }} />;
         case TodoEnum.MONTHLY:
             return (
                 <MonthlyTodo todo={todo as TodoDataBase & { goal: string }} />
