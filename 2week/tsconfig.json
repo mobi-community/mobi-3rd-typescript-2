@@ -7,7 +7,7 @@
         "skipLibCheck": true,
         "baseUrl": "./",
         "paths": {
-            "@components/*": ["src/question/components/*"],
+            "@question/components/*": ["src/question/components/*"],
             "@api/*": ["src/apis/*"],
             "@type/*": ["src/types/*"]
         },
