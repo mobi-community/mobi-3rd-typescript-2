@@ -1,4 +1,6 @@
-const OneTodo: React.FC = () => {
-  return <div>:)</div>;
-};
-export default OneTodo;
+import { TodoDataBase } from "#types/todo"
+
+const OneTodo: React.FC<TodoDataBase> = (todo) => {
+  return <div>{todo.type}</div>
+}
+export default OneTodo
