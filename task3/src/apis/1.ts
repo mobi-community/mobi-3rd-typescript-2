@@ -7,12 +7,14 @@ interface TodoApiSignature {
 
 export const TodoApi: TodoApiSignature = {
   async getTodo() {
-    let res = null
+    let result = null
     try {
-      res = await axios.get("/");
+      const response = await axios.get("/");
+      result = response.data
     } catch {
-      throw new Error("데이터 패칭 실패 😉") 
+      console.error("잇쿵 😉..")
+      result = []
     }
-    return res.data;
+    return result;
   },
 };

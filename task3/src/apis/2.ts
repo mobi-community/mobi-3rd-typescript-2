@@ -2,12 +2,14 @@ import axios from "axios";
 
 export const TodoApi = {
   async getTodo<T>() : Promise<Array<T>> {
-    let res = null
+    let result = null
     try {
-      res = await axios.get("/");
-    } catch (e) {
-      throw new Error("데이터 패칭 실패 😉") 
+      const response = await axios.get("/");
+      result = response.data
+    } catch {
+      console.error("잇쿵 😉..")
+      result = []
     }
-    return res.data;
+    return result;
   },
 };

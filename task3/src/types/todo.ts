@@ -4,20 +4,23 @@ export enum TodoEnum {
   MONTHLY = "MONTHLY",
 }
 
+export interface TodoDaily {
+  type: TodoEnum.DAILY;
+  content: string;
+  title: string;
+}
+export interface TodoWeekly {
+  type: TodoEnum.WEEKLY;
+  total: Date;
+}
+export interface TodoMonthly {
+  type: TodoEnum.MONTHLY;
+  goal: string;
+}
 export type TodoDataBase =
-  | {
-      type: TodoEnum.DAILY;
-      content: string;
-      title: string;
-    }
-  | {
-      type: TodoEnum.WEEKLY;
-      total: Date;
-    }
-  | {
-      type: TodoEnum.MONTHLY;
-      goal: string;
-    };
+  | TodoDaily
+  | TodoWeekly
+  | TodoMonthly
 
 export type TodoType<T extends TodoEnum = TodoEnum> = Extract<
   TodoDataBase,

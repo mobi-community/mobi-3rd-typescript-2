@@ -9,6 +9,8 @@
       "@type/*": ["src/types/*"],
       "@asset/*": ["src/assets/*"],
       "@api/*": ["src/apis/*"],
+      "@util/*": ["src/utils/*"],
+      "@hook/*": ["src/hooks/*"],
     }
   },
 }
