@@ -6,8 +6,8 @@ interface ApiResponse {
 }
 
 export const TodoApi = {
-    async getTodo(): Promise<TodoDataBase[]> {
+    async getTodo(): Promise<ApiResponse> {
         const res = await axios.get<ApiResponse>("/");
-        return res.data.data;
+        return res.data;
     },
 };

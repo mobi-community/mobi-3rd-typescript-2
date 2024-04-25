@@ -4,9 +4,7 @@ export enum TodoEnum {
     MONTHLY = "MONTHLY",
 }
 
-export type TodoDataBase = {
-    type: TodoEnum;
-} & (
+export type TodoDataBase =
     | {
           type: TodoEnum.DAILY;
           content: string;
@@ -19,8 +17,7 @@ export type TodoDataBase = {
     | {
           type: TodoEnum.MONTHLY;
           goal: string;
-      }
-);
+      };
 
 export type TodoType<T extends TodoEnum = TodoEnum> = Extract<
     TodoDataBase,
