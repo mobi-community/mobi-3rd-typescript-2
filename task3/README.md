@@ -13,6 +13,10 @@
 ex) ../../../style/style.js => @style/style.js
 ```
 
+1. tsconfig.json
+  - baseUrl 과 path
+
+
 ### 2. API 응답에 타입 부여하기
 
 ```
