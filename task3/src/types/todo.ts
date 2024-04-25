@@ -10,7 +10,7 @@ export type TodoDataBase =
       content: string;
       title: string;
     }
-  | {
+  | { 
       type: TodoEnum.WEEKLY;
       total: Date;
     }
