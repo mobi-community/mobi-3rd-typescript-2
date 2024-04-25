@@ -13,6 +13,6 @@ const OneTodo: React.FC<TodoDataBase> = (todo) => {
     }
     return <WeeklyTodo {...todo} />
   }
-  return checkTodoType(todo) // 아까여기 주저리주저리를 따로분리했는데 
+  return checkTodoType(todo)
 }
 export default OneTodo

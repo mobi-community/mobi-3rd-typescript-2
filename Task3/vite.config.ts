@@ -10,6 +10,7 @@ export default defineConfig({
       { find: "#question", replacement: "/src/question" },
       { find: "#apis", replacement: "/src/apis" },
       { find: "#const", replacement: "/src/const" },
+      { find: "#hooks", replacement: "/src/hooks" },
     ],
   },
 })
