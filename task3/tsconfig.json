@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
       "@apis/*":["src/apis/*"],
       "@assets/*":["src/assets/*"],
       "@types/*" : ["src/types/*"],
+      "@question/components/*":["src/question/components/*"],
       "@question/*":["src/question/*"],
     },
     "target": "ES2020",

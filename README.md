@@ -15,5 +15,6 @@
 [Task2.Readme바로가기](https://github.com/mobi-community/mobi-3rd-typescript-2/tree/pair2-Wendy/task2)
 
 ### task3
+[Task3.Readme바로가기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Wendy/task3/README.md)
 ### task4
 ### task5
