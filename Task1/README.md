@@ -240,10 +240,10 @@
         import {TextField}from '../../../../components/'
         => from '@components/textfield';
 
-    ### pathsm
+    ### path
 
 - baseUrl 을 기준으로 상대 위치로 가져오기
-        =>  "baseUrl": "./",
+  => "baseUrl": "./",
   "paths": {
   "@components/_": [
   "src/components/_"
@@ -253,10 +253,10 @@
     ### types
 
 - 기본적으로 node_modules 폴더를 제외하지만 ,라이브러리에서 정의해놓는 @types폴더는 컴파일에 **자동** 으로 경로에 포함됨 만약 기본경로를 변경하고싶다면
-        "compilerOptions": {
-            "typeRoots": ["./my-tslib"]
-            "types": ["node", "jest", "express"],
-        }
+  "compilerOptions": {
+  "typeRoots": ["./my-tslib"]
+  "types": ["node", "jest", "express"],
+  }
 
 5.  ## resolveJsonModule
 
