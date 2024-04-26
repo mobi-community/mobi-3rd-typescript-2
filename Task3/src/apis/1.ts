@@ -1,9 +1,11 @@
 import { TodoDataBase } from "#types/todo"
 import axios from "axios"
 
-export const TodoApi = {
-  async getTodo() {
-    const res = await axios.get<Array<TodoDataBase>>("/")
-    return res.data
-  },
+interface TypeGetTodo {
+  (): Promise<Array<TodoDataBase>>
+}
+
+export const getTodo: TypeGetTodo = async () => {
+  const res = await axios.get<Array<TodoDataBase>>("/")
+  return res.data
 }

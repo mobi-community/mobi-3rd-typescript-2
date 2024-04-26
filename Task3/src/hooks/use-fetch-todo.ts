@@ -1,4 +1,4 @@
-import { TodoApi } from "#apis/2"
+import { getTodo } from "#apis/2"
 import { TodoDataBase } from "#types/todo"
 import { useState } from "react"
 
@@ -8,7 +8,7 @@ export const useFetchTodo = () => {
   const fetchTodo = async () => {
     setIsLoading(true)
     try {
-      const todoArr = await TodoApi()
+      const todoArr = await getTodo()
       setTodo(todoArr)
     } catch (err) {
       console.log("err발생", err)
