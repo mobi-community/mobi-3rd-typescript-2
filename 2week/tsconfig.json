@@ -9,7 +9,9 @@
         "paths": {
             "@question/components/*": ["src/question/components/*"],
             "@api/*": ["src/apis/*"],
-            "@type/*": ["src/types/*"]
+            "@type/*": ["src/types/*"],
+            "@question/*": ["src/question/*"],
+            "@util/*": ["src/util/*"]
         },
 
         /* Bundler mode */

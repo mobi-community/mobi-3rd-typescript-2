@@ -8,6 +8,9 @@ export default defineConfig({
         alias: {
             "@question/components": "/src/question/components",
             "@type": "/src/types",
+            "@question": "/src/question",
+            "@api": "/src/apis",
+            "@util": "/src/util",
         },
     },
 });

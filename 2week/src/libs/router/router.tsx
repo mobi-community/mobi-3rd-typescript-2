@@ -1,4 +1,5 @@
 import OneTodo from "@question/components/one-todo";
+import Q1Component from "@question/q";
 import { TodoDataBase, TodoEnum } from "@type/todo";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: "/monthly",
         element: <OneTodo todo={monthly} />,
+    },
+    {
+        path: "/q",
+        element: <Q1Component />,
     },
 ]);
 export default router;
