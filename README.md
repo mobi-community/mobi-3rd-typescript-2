@@ -1,51 +1,23 @@
-# mobi-3rd-typescript-2
-### 3주차
-<a href="https://lyrical-brain-e0f.notion.site/mobi-typescript-week2-8a279eec03184002ac4290adef934d9a">@see</a>
+# mobi 3rd TypeScript 2
 
-### 기간
-```
-2024.04.22 ~ 2024.04.27 (일요일 리뷰 가능하도록 PR 남기기, 스프레티드시트에 링크 등록)
-2024.04.28 (WIL, 다른 페어 코드 리뷰, 1주차 회고 및 느낀점 발표)
+## Task1
 
-* 반드시 리드미에 프로젝트 개요와 설명, 시연 영상 등을 함께 작성해주세요 :)
-```
+-   tsconfig를 활용하여 ts project를 만들고 상대 경로를 절대 경로로 만들어 import 해보세요
+    -   vite에서 사용시 tsconfig.json과 vite.comfig.ts에서 설정을 해주어야함.
 
-### 페어-편성
-```
-1페어 Riel - Jeff - Chan
-2페어 Gang - Wendy - Brilly
-```
+## Task2
 
-### 과제
-```
-1. 타입스크립트에서 꼭 필요한 ts-config
-2. 타입이 확실하지 않은 상황에서 안정적인 환경 만들기
-3. 문제 풀기
-4. 생각해보기 + 정리하기
-5. Check List
-```
+-   데이터 통신을 통해 받아온 데이터의 타입 부여하기
+-   [1번 Q](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Gang/2week/src/apis/1.ts)
+-   [2번 Q](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Gang/2week/src/apis/2.ts)
 
-### 진행방법
-```
-1. 페어는 각자 함께 할 수 있는 시간을 선정합니다.
-2. 시간 선정이 완료되면 mobi 단톡방에 월~일요일 단위로 올려주세요.
-ex)
-  월 
-  - Jeff (14:00 ~ 22:00)
-  - Lucas (08:00 ~ 20:00)
-  - core-time (20:00~22:00) -- 코어 타임은 매일 매일 가져야합니다. 겹치는 시간을 최대한 활용하고 블락킹 된 부분과 풀이한 부분을 공유할 것
+## Task 3
 
-  화 ...
-  ...
-  목 - 리프레쉬 데이 (같은 페어일 경우 요일 고정)
-  ...
-  일
-  - 20:00~22:00 WIL
-  - 22:00~23:00 1주차 회고 및 느낀점
-  - 23:00~01:00 각 페어 코드 리뷰 -- 반드시 PR로 문서화할 것
+-   타입가드로 유동적인 타입에 자동완성 지원하기
+    -   TodoDataBase는 type에 따라 다른 데이터 양식을 갖고 있습니다.
+    -   이에 따라 현재 안정적인 타입 환경은 TodoDataBase 객체의 type 속성만을 지원하고 있습니다.
+    -   이를 타입 가드를 이용하여 특정 타입에 따라 모든 경우에 안정적인 타입 환경에서 개발할 수 있도록 수정해보세요!
 
+## Task 4
 
-2. 과제는 스스로 풀어본 이후에 코어 타임에는 반드시 페어와 함께 고민하고 블락킹 된 부분의 해소와 풀이를 공유해야합니다.
-3. 매일 매일 풀이한 과제는 해당 레포지토리에 브랜치에 Pair-n으로 commit-push 합니다. (리프레쉬 제외 1일 1커밋 준수)
-4. 학습 시간에는 모비 항상 디스코드에 접속해서 학습을 진행해주셔야 합니다.
-```
+-   [Task 4 생각해보기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/pair2-Gang/2week/Task4.txt)
