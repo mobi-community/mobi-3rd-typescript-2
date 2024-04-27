@@ -1,16 +1,14 @@
 {
-  "composite": true, // tsconfig.json > references 에 추가하기 위해
-  "extends" : "./tsconfig.json", // tsconfig.json 를 기반으로 함.
   "compilerOptions": {
     /* 절대경로 설정 */
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@question/*": ["src/question/*"],
-      "@type/*": ["src/types/*"],
-      "@asset/*": ["src/assets/*"],
-      "@api/*": ["src/apis/*"],
-      "@util/*": ["src/utils/*"],
-      "@hook/*": ["src/hooks/*"],
+      "@question/*": ["question/*"],
+      "@type/*": ["types/*"],
+      "@asset/*": ["assets/*"],
+      "@api/*": ["apis/*"],
+      "@util/*": ["utils/*"],
+      "@hook/*": ["hooks/*"],
     }
   },
 }
