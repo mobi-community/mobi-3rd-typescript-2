@@ -145,4 +145,43 @@ enum Direction {
 <br/>
 <br/>
 
-## import "type" 
+----
+
+<br/>
+<br/>
+
+## import type
+
+### import elision (import 제거)
+- 기본적으로 TypeScript는 import 대상이 타입으로서만 기능한다면 자동으로 이를 감지해, 컴파일 시 해당 구문을 삭제한다.
+
+```ts
+import { Car } from "./car";
+
+export const = drive(car: Car) => { // Car 는 타입으로 사용함.!
+  // ...
+}
+```
+- 하지만 TypeScript 가 이를 유추할 수 없는 방법으로 작성하는 경우도 있다.(아래 예시 참고) 
+
+- 이럴경우, 필요한 모듈인데 삭제하여 이슈가 발생하거나 삭제해야할 타입인데 그러지 않아 번들 사이즈가 증가하는 등의 문제가 될 수 있다.
+
+```ts
+import { Car, Taxi, Bus } from "./car";
+export { Car, Taxi, Bus } // 나 TypeScript 인데, 이거 누구냐?
+```
+
+### type-only imports and exports
+
+- typescript 3.8 version 에 추가된 기능으로 import/export 대상이 타입인지를 명시할 수 있어, 위와 같은 문제를 막을 수 있다.
+- 협업하는 개발자에게도 명시적으로 타입 관련 import 를 표시하는 게 좋을 듯 하다. (가독성)
+- ⚠️ 주의 ) 다른 모듈과 명확히 구분해서 적어야 한다. 
+
+```ts
+import type { Car } from "./car";
+import { Taxi, Bus } from "./car";
+
+export type { Car }
+export { Taxi, Bus } from "./car";
+```
+
