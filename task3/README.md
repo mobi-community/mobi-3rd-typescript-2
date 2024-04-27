@@ -68,4 +68,4 @@ ex) ../../../style/style.js => @style/style.js
 ```
 
 - [타입 가드 함수 선언 | `utils > type-guard.ts`](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3/src/utils/type-guard.ts)
-- [타입 가드 함수 사용 | `questions > components > one-todo.tsx`](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3/src/utils/type-guard.ts)
+- [타입 가드 함수 사용 | `questions > components > one-todo.tsx`](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3/src/question/components/one-todo.tsx)
