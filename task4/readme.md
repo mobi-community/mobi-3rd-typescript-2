@@ -73,3 +73,8 @@ colors.push('yellow'); // Error: Property 'push' does not exist on type 'readonl
 
 #### 🧐 개인적인 결론
 enum 은 정해진 키와 값을 통해 고정된 상수를 가지고, 역방향 접근이 가능하지만 Tree-Shaking이 안되고 -> 불필요한 코드 가 증가한다. 따라서 as const 나 const enum 을 사용하는게 어떨까?
+
+### 🧐 TypeScript에서 import type을 사용하는 이유
+- 런타임에 불필요한 코드 방지
+- 모듈이 실제로 필요하지 않을때 필요한 모듈만 사용
+- 코드의 가독성 향상 및 명확한 코드 의도 전달
