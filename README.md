@@ -2,9 +2,7 @@
 
 ## 패쓰 진행상황
 
-### task 1
-#### [🔗README 바로보기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task1)
-#### 요약
+### [🔗 task 1](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task1)
 - tsconfig.json
   - `tsconfig.json` 이란?
   - 옵션 정리하기
@@ -12,9 +10,7 @@
 
 <br/>
 
-### task 2
-#### [🔗README 바로보기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task2)
-#### 요약
+### [🔗 task 2](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task2)
 - type-guard
   - in
   - typeof
@@ -23,9 +19,7 @@
 
 <br/>
 
-### task 3
-#### [🔗README 바로보기](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3)
-#### 요약
+### [🔗 task 3](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3)
 - 절대경로 설정
   - `tsconfig.paths.json`
   - `vite.config.json`
@@ -36,9 +30,7 @@
 
 <br/>
 
-### task 4
-#### [🔗README 바로보기](https://github.com/mobi-community/mobi-3rd-typescript-2/tree/Pair1-Jeff/task4)
-#### 요약
+### [🔗 task 4](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task4)
 - enum & import "type"
   - enum
     - 숫자열거형
