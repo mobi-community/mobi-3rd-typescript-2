@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    /* 절대경로 설정 */
+    "baseUrl": "./src",
+    "paths": {
+      "@question/*": ["question/*"],
+      "@type/*": ["types/*"],
+      "@asset/*": ["assets/*"],
+      "@api/*": ["apis/*"],
+      "@util/*": ["utils/*"],
+      "@hook/*": ["hooks/*"],
+    }
+  },
+}

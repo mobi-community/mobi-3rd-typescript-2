@@ -1,51 +1,51 @@
-# mobi-3rd-typescript-2
-### 3주차
-<a href="https://lyrical-brain-e0f.notion.site/mobi-typescript-week2-8a279eec03184002ac4290adef934d9a">@see</a>
+# mobi-3rd-typescript-2 // 🌀 Jeff
 
-### 기간
-```
-2024.04.22 ~ 2024.04.27 (일요일 리뷰 가능하도록 PR 남기기, 스프레티드시트에 링크 등록)
-2024.04.28 (WIL, 다른 페어 코드 리뷰, 1주차 회고 및 느낀점 발표)
+## 패쓰 진행상황
 
-* 반드시 리드미에 프로젝트 개요와 설명, 시연 영상 등을 함께 작성해주세요 :)
-```
+### [🔗 task 1](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task1)
+- tsconfig.json
+  - `tsconfig.json` 이란?
+  - 옵션 정리하기
+  - 내 결론
 
-### 페어-편성
-```
-1페어 Riel - Jeff - Chan
-2페어 Gang - Wendy - Brilly
-```
+<br/>
 
-### 과제
-```
-1. 타입스크립트에서 꼭 필요한 ts-config
-2. 타입이 확실하지 않은 상황에서 안정적인 환경 만들기
-3. 문제 풀기
-4. 생각해보기 + 정리하기
-5. Check List
-```
+### [🔗 task 2](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task2)
+- type-guard
+  - in
+  - typeof
+  - instanceof
+  - 타입 가드 함수
 
-### 진행방법
-```
-1. 페어는 각자 함께 할 수 있는 시간을 선정합니다.
-2. 시간 선정이 완료되면 mobi 단톡방에 월~일요일 단위로 올려주세요.
-ex)
-  월 
-  - Jeff (14:00 ~ 22:00)
-  - Lucas (08:00 ~ 20:00)
-  - core-time (20:00~22:00) -- 코어 타임은 매일 매일 가져야합니다. 겹치는 시간을 최대한 활용하고 블락킹 된 부분과 풀이한 부분을 공유할 것
+<br/>
 
-  화 ...
-  ...
-  목 - 리프레쉬 데이 (같은 페어일 경우 요일 고정)
-  ...
-  일
-  - 20:00~22:00 WIL
-  - 22:00~23:00 1주차 회고 및 느낀점
-  - 23:00~01:00 각 페어 코드 리뷰 -- 반드시 PR로 문서화할 것
+### [🔗 task 3](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task3)
+- 절대경로 설정
+  - `tsconfig.paths.json`
+  - `vite.config.json`
+- API 응답에 타입 부여하기
+  - interface
+  - Generics
+- type-guard
 
+<br/>
 
-2. 과제는 스스로 풀어본 이후에 코어 타임에는 반드시 페어와 함께 고민하고 블락킹 된 부분의 해소와 풀이를 공유해야합니다.
-3. 매일 매일 풀이한 과제는 해당 레포지토리에 브랜치에 Pair-n으로 commit-push 합니다. (리프레쉬 제외 1일 1커밋 준수)
-4. 학습 시간에는 모비 항상 디스코드에 접속해서 학습을 진행해주셔야 합니다.
-```
+### [🔗 task 4](https://github.com/mobi-community/mobi-3rd-typescript-2/blob/Pair1-Jeff/task4)
+- enum & import "type"
+  - enum
+    - 숫자열거형
+    - 문자열거형
+  - 'as const' 를 사용한 객체와의 차이
+  - enum 사용에 대하여
+  - import type
+
+<br/>
+
+------
+
+## 회고
+tsconfig 에 대해 조사한 것이 이번 패스 가장 큰 소득이자 어려움이었다. 
+설정할 수 있는 부분이 굉장히 많고, 몇 개 적어보니 특정 설정값에 의존하는 것도 발견할 수 있었다.
+react 프로젝트를 만들 때는 그냥 알아서 작성해줘서 "ts 가 대충 이런 것 인갑다" 했는데, 공식문서에서 확인해보니 Typescript 를 어떻게 활용할지 개발자에게 많이 맡겨놓은 것 같았다.
+당장 모비톤 할 때 `tsconfig.json` 부터 재설정하진 않겠지만 (완성이 목표..), 숙련된 개발자라면 이러한 설정파일부터 만져가며 개발 문화에 적합한 환경을 세팅하지 않을까 싶다. 
+개인적으로 실험할 때, 조금씩 건드려봐야겠다.
