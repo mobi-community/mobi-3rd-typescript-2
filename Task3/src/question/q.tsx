@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const Q1Component: React.FC = () => {
   return <div>:)</div>;
 };
