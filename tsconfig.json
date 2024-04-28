@@ -1,0 +1,26 @@
+// TypeScript 프로젝트의 설정 파일
+{
+  "compilerOptions": {
+    "target": "ES2020", // TypeScript 파일을 어떤 버전의 자바스크립트로 컴파일할지 지정 => ES2020으로 컴파일
+    "useDefineForClassFields": true, // 클래스 필드에 대한 정의 방법 지정 (true : ECMAScript의 클래스 필드 정의에 사용되는 class를 대신하여 defineProperty 사용)
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // TypeScript가 사용할 수 있는 라이브러리 지정 => ES2020과 DOM 라이브러리를 사용하며, DOM.Iterable을 사용하여 반복 가능한 DOM 요소를 다룸
+    "module": "ESNext", // 모듈 코드를 어떤 형식으로 생성할지 지정 => 가장 최신의 ECMAScript 모듈 형식 사용
+    "skipLibCheck": true, // node_modules 내부의 라이브러리를 검사하지 않도록 설정
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // 모듈 해결 전략 설정 => 번들러에 의해 해결
+    "allowImportingTsExtensions": true, // TypeScript 파일의 확장자를 import 할 수 있도록 허용
+    "resolveJsonModule": true, // Json 파일을 import 할 수 있도록 허용
+    "isolatedModules": true, // 각 파일을 독립된 모듈로 처리하도록 설정
+    "noEmit": true, // 컴파일 결과를 생성하지 않도록 설정
+    "jsx": "react-jsx", // JSX 코드르를 어떤 형식으로 해석할지 설정
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"], // 컴파일 대상 파일 및 폴더 지정 => src 내 파일들
+  "references": [{ "path": "./tsconfig.node.json" }] // 프로젝트 간의 참조 설정
+}
